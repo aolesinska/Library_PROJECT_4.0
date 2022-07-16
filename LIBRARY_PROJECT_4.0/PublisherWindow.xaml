@@ -5,23 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
-        Title="PublisherWindow" Height="450" Width="800">
+        Title="PUBLISHERS" Height="450" Width="593.6">
     <Grid>
-        <Label Content="PUBLISHERS" HorizontalAlignment="Left" Margin="192,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="33,52,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="pub_name" HorizontalAlignment="Left" Height="23" Margin="114,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="City" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="pub_city" HorizontalAlignment="Left" Height="23" Margin="114,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Street" HorizontalAlignment="Left" Margin="33,108,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="pub_street" HorizontalAlignment="Left" Height="23" Margin="114,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Building Num" HorizontalAlignment="Left" Margin="33,136,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="pub_num" HorizontalAlignment="Left" Height="23" Margin="114,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Postcode" HorizontalAlignment="Left" Margin="33,164,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="pub_post" HorizontalAlignment="Left" Height="23" Margin="114,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="24,209,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click"/>
-        <Button x:Name="BtnAddPublisher" Content="Add" HorizontalAlignment="Left" Margin="403,55,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddPublisher_Click"/>
-        <Button x:Name="BtnUpdatePublisher" Content="Update" HorizontalAlignment="Left" Margin="403,83,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdatePublisher_Click"/>
-        <Button x:Name="BtnDeletePublisher" Content="Delete" HorizontalAlignment="Left" Margin="403,111,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeletePublisher_Click"/>
-        <DataGrid x:Name="gridPublishers" HorizontalAlignment="Left" Height="157" Margin="10,253,0,0" VerticalAlignment="Top" Width="502" SelectionChanged="gridPublishers_SelectionChanged"/>
+        <Label Content="PUBLISHERS" HorizontalAlignment="Left" Margin="154,8,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontWeight="Bold"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="pub_name" HorizontalAlignment="Left" Height="23" Margin="143,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="39,105,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="pub_city" HorizontalAlignment="Left" Height="23" Margin="143,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Street" HorizontalAlignment="Left" Margin="39,133,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="pub_street" HorizontalAlignment="Left" Height="23" Margin="143,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Building Num" HorizontalAlignment="Left" Margin="39,161,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="pub_num" HorizontalAlignment="Left" Height="23" Margin="143,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Postcode" HorizontalAlignment="Left" Margin="39,189,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="pub_post" HorizontalAlignment="Left" Height="23" Margin="143,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="38,228,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnAddPublisher" Content="Add" HorizontalAlignment="Left" Margin="446,77,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddPublisher_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnUpdatePublisher" Content="Update" HorizontalAlignment="Left" Margin="446,105,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdatePublisher_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnDeletePublisher" Content="Delete" HorizontalAlignment="Left" Margin="446,133,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeletePublisher_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <DataGrid x:Name="gridPublishers" ColumnWidth="*" HorizontalAlignment="Left" Height="157" Margin="10,253,0,0" VerticalAlignment="Top" Width="567" SelectionChanged="gridPublishers_SelectionChanged" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
     </Grid>
 </Window>

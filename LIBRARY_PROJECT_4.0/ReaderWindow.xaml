@@ -5,23 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
-        Title="ReaderWindow" Height="450" Width="800">
+        Title="READERS" Height="471.6" Width="698">
     <Grid>
-        <Label Content="READERS" HorizontalAlignment="Left" Margin="248,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="98,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="r_lname" HorizontalAlignment="Left" Height="23" Margin="98,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="PESEL" HorizontalAlignment="Left" Margin="26,112,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="r_pesel" HorizontalAlignment="Left" Height="23" Margin="98,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" Margin="26,140,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="r_email" HorizontalAlignment="Left" Height="23" Margin="98,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Phone" HorizontalAlignment="Left" Margin="26,168,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="r_phone" HorizontalAlignment="Left" Height="23" Margin="98,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="17,214,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click"/>
-        <Button x:Name="BtnAddReader" Content="Add" HorizontalAlignment="Left" Margin="371,56,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddReader_Click"/>
-        <Button x:Name="BtnUpdateReader" Content="Update" HorizontalAlignment="Left" Margin="371,84,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdateReader_Click"/>
-        <Button x:Name="BtnDeleteReader" Content="Delete" HorizontalAlignment="Left" Margin="371,112,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeleteReader_Click"/>
-        <DataGrid x:Name="gridReaders" HorizontalAlignment="Left" Height="151" Margin="10,259,0,0" VerticalAlignment="Top" Width="520" SelectionChanged="gridReaders_SelectionChanged"/>
+        <Label Content="READERS" HorizontalAlignment="Left" Margin="249,10,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontWeight="Bold"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="65,92,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="155,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_lname" HorizontalAlignment="Left" Height="23" Margin="155,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="PESEL" HorizontalAlignment="Left" Margin="65,148,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_pesel" HorizontalAlignment="Left" Height="23" Margin="155,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="65,176,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_email" HorizontalAlignment="Left" Height="23" Margin="155,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="65,204,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_phone" HorizontalAlignment="Left" Height="23" Margin="155,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="56,250,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnAddReader" Content="Add" HorizontalAlignment="Left" Margin="537,92,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnUpdateReader" Content="Update" HorizontalAlignment="Left" Margin="537,120,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdateReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnDeleteReader" Content="Delete" HorizontalAlignment="Left" Margin="537,148,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeleteReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <DataGrid x:Name="gridReaders" ColumnWidth="*" HorizontalAlignment="Left" Height="150" Margin="10,282,0,0" VerticalAlignment="Top" Width="671" SelectionChanged="gridReaders_SelectionChanged" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
     </Grid>
 </Window>

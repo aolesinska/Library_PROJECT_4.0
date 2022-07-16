@@ -79,6 +79,13 @@ namespace LIBRARY_PROJECT_4._0
                     {
                         var book = (BookDalModel)this.gridBooks.SelectedItems[0];
                         bookTitle = book.Title;
+
+                        this.b_title.Text = book.Title;
+                        this.b_isbn.Text = book.ISBN;
+                        this.combo_category.Text = book.Category;
+                        this.combo_autor.Text = book.Autor;
+                        this.combo_publisher.Text = book.Publisher;
+                        this.combo_status.Text = book.Status;
                     }
                 }
                 catch (InvalidCastException) { }
