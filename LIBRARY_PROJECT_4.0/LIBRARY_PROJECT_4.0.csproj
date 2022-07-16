@@ -80,6 +80,12 @@
     <Compile Include="DalModels\PublisherModels\PublisherDalModelForSelector.cs" />
     <Compile Include="DalModels\ReaderModels\ReaderDalModel.cs" />
     <Compile Include="DalModels\StatusModel\StatusDalModelForSelector.cs" />
+    <Compile Include="Dals\AutorDal.cs" />
+    <Compile Include="Dals\BookDal.cs" />
+    <Compile Include="Dals\CategoryDal.cs" />
+    <Compile Include="Dals\PublisherDal.cs" />
+    <Compile Include="Dals\ReaderDal.cs" />
+    <Compile Include="Dals\StatusDal.cs" />
     <Compile Include="LibraryModels\Autor.cs">
       <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
     </Compile>
