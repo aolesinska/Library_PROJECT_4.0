@@ -72,6 +72,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DalModels\AutorModels\AutorDalModel.cs" />
+    <Compile Include="DalModels\AutorModels\AutorDalModelForSelector.cs" />
+    <Compile Include="DalModels\BookModels\BookDalModel.cs" />
+    <Compile Include="DalModels\CategoryModels\CategoryDalModelForSelector.cs" />
+    <Compile Include="DalModels\PublisherModels\PublisherDalModel.cs" />
+    <Compile Include="DalModels\PublisherModels\PublisherDalModelForSelector.cs" />
+    <Compile Include="DalModels\ReaderModels\ReaderDalModel.cs" />
+    <Compile Include="DalModels\StatusModel\StatusDalModelForSelector.cs" />
     <Compile Include="LibraryModels\Autor.cs">
       <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
     </Compile>
