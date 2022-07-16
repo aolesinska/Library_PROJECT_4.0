@@ -1,0 +1,27 @@
+﻿<Window x:Class="LIBRARY_PROJECT_4._0.ReaderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
+        mc:Ignorable="d"
+        Title="ReaderWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="READERS" HorizontalAlignment="Left" Margin="248,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="98,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="r_lname" HorizontalAlignment="Left" Height="23" Margin="98,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="PESEL" HorizontalAlignment="Left" Margin="26,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="r_pesel" HorizontalAlignment="Left" Height="23" Margin="98,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="26,140,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="r_email" HorizontalAlignment="Left" Height="23" Margin="98,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="26,168,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="r_phone" HorizontalAlignment="Left" Height="23" Margin="98,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="17,214,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click"/>
+        <Button x:Name="BtnAddReader" Content="Add" HorizontalAlignment="Left" Margin="371,56,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddReader_Click"/>
+        <Button x:Name="BtnUpdateReader" Content="Update" HorizontalAlignment="Left" Margin="371,84,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdateReader_Click"/>
+        <Button x:Name="BtnDeleteReader" Content="Delete" HorizontalAlignment="Left" Margin="371,112,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeleteReader_Click"/>
+        <DataGrid x:Name="gridReaders" HorizontalAlignment="Left" Height="151" Margin="10,259,0,0" VerticalAlignment="Top" Width="520" SelectionChanged="gridReaders_SelectionChanged"/>
+    </Grid>
+</Window>
