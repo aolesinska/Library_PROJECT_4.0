@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
-        Title="AutorWindow" Height="450" Width="800">
+        Title="AUTORS" Height="450" Width="467.6">
     <Grid>
-        <Label Content="AUTHORS" HorizontalAlignment="Left" Margin="181,24,0,0" VerticalAlignment="Top" Width="117" Height="27"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AutorFirstN" HorizontalAlignment="Left" Height="23" Margin="98,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AutorLastN" HorizontalAlignment="Left" Height="23" Margin="98,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Margin="251,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AutorFirstN_Update" HorizontalAlignment="Left" Height="23" Margin="322,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="251,84,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AutorLastN_Update" HorizontalAlignment="Left" Height="23" Margin="322,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="gridAutors" HorizontalAlignment="Left" Height="188" Margin="98,222,0,0" VerticalAlignment="Top" Width="252" SelectionChanged="gridAuthors_SelectionChanged"/>
-        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="17,193,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click"/>
-        <Button  x:Name="BtnUpdateAutor" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="284,126,0,0" Click="BtnUpdateAutor_Click"/>
-        <Button x:Name="BtnAddAutor" Content="Add" HorizontalAlignment="Left" Margin="143,126,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddAutor_Click"/>
-        <Button x:Name="BtnDeleteAutor" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="367,126,0,0" Click="BtnDeleteAutor_Click"/>        
+        <Label Content="AUTHORS" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top" Width="227" Height="71" FontSize="48" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="16,132,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="AutorFirstN" HorizontalAlignment="Left" Height="23" Margin="101,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="16,160,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="AutorLastN" HorizontalAlignment="Left" Height="23" Margin="101,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="241,132,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="AutorFirstN_Update" HorizontalAlignment="Left" Height="23" Margin="326,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="241,160,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="AutorLastN_Update" HorizontalAlignment="Left" Height="23" Margin="326,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <DataGrid x:Name="gridAutors"  ColumnWidth="*" HorizontalAlignment="Left" Height="109" Margin="81,284,0,0" VerticalAlignment="Top" Width="302" SelectionChanged="gridAuthors_SelectionChanged" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button  x:Name="BtnUpdateAutor" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="274,202,0,0" Click="BtnUpdateAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="BtnAddAutor" Content="Add" HorizontalAlignment="Left" Margin="133,202,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="BtnDeleteAutor" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="357,202,0,0" Click="BtnDeleteAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Window>
