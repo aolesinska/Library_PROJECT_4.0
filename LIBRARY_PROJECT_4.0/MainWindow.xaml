@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="LIBRARY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="339,24,0,0"/>
+        <Button x:Name="BtnBooks" Content="BOOKS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="177,95,0,0" Click="BtnBooks_Click" Height="51"/>
+        <Button x:Name="BtnAuthors" Content="AUTHORS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="177,159,0,0" Click="BtnAuthors_Click"  Height="50"/>
+        <Button x:Name="BtnPublishers" Content="PUBLISHERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="177,222,0,0" Click="BtnPublishers_Click"  Height="52"/>
+        <Button x:Name="BtnReaders" Content="READERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="177,287,0,0" Click="BtnReaders_Click"  Height="51"/>
     </Grid>
 </Window>
