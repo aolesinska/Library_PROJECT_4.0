@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,6 +72,39 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="LibraryModels\Autor.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\Book.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\Category.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\LibraryManagementSystemModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagementSystemModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\LibraryManagementSystemModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\LibraryManagementSystemModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryManagementSystemModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\Publisher.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\Reader.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryModels\Status.cs">
+      <DependentUpon>LibraryManagementSystemModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +128,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="LibraryModels\LibraryManagementSystemModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LibraryManagementSystemModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LibraryModels\LibraryManagementSystemModels.edmx.diagram">
+      <DependentUpon>LibraryManagementSystemModels.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +143,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LibraryModels\LibraryManagementSystemModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LibraryManagementSystemModels.Context.cs</LastGenOutput>
+      <DependentUpon>LibraryManagementSystemModels.edmx</DependentUpon>
+    </Content>
+    <Content Include="LibraryModels\LibraryManagementSystemModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LibraryManagementSystemModels.edmx</DependentUpon>
+      <LastGenOutput>LibraryManagementSystemModels.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
