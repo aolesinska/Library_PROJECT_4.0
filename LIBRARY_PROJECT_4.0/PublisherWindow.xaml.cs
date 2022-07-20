@@ -115,5 +115,9 @@ namespace LIBRARY_PROJECT_4._0
             LoadPublisherData();
         }
 
+        private void BtnClearInput_Click(object sender, RoutedEventArgs e)
+        {
+            clearInput();
+        }
     }
 }
