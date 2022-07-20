@@ -91,7 +91,24 @@ namespace LIBRARY_PROJECT_4._0
         }
         private void BtnUpdateAutor_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                if (AutorFirstN_Update.Text.Length == 0 || AutorLastN_Update.Text.Length == 0)
+                    throw new Exception("Fields can not be empty");
 
+                string newFName = AutorFirstN_Update.Text;
+                string newLName = AutorLastN_Update.Text;
+                
+
+                autorDal.Update(autorLastNameUpdate, newFName, newLName);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show($"Error: { err.Message}");
+            }
+
+            LoadAutorData();
+            clearInput();
         }
     }
 }

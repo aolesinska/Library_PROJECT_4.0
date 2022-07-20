@@ -42,7 +42,7 @@ namespace LIBRARY_PROJECT_4._0.Dals
         {
             var autorToDelete =
                 db.Autors
-                .Where(auth => auth.LastName == lastName)
+                .Where(aut => aut.LastName == lastName)
                 .Select(aut => aut)
                 .Single();
             db.Books
@@ -54,6 +54,20 @@ namespace LIBRARY_PROJECT_4._0.Dals
                });
 
             db.Autors.Remove(autorToDelete);
+            db.SaveChanges();
+        }
+        internal void Update(string lname, string lnameUpdate, string fname)
+        {
+            var authorToUpdate = db.Autors
+                .Where(aut => aut.LastName == lname)
+                .Select(pub => pub)
+                .Single();
+
+            if (authorToUpdate != null)
+            {
+                authorToUpdate.FirstName = fname;
+                authorToUpdate.LastName = lnameUpdate;                
+            }
             db.SaveChanges();
         }
     }
