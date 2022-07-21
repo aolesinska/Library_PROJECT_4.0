@@ -1,5 +1,8 @@
 ﻿namespace LIBRARY_PROJECT_4._0.DalModels.PublisherModels
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class PublisherDalModelForSelector
     {
         public int ID { get; set; }

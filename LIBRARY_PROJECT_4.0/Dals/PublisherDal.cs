@@ -5,9 +5,16 @@ using System.Linq;
 
 namespace LIBRARY_PROJECT_4._0.Dals
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class PublisherDal
     {
         private LibraryDB3Entities db = new LibraryDB3Entities();
+
+        /// <summary>
+        /// 
+        /// </summary>
         public IList<PublisherDalModel> getPublisherList =>
             db.Publishers.Select(
                 publisher => new PublisherDalModel
@@ -18,6 +25,10 @@ namespace LIBRARY_PROJECT_4._0.Dals
                     BuildingNum = publisher.BuildingNum,
                     Postcode = publisher.Postcode,
                 }).ToList();
+
+        /// <summary>
+        /// 
+        /// </summary>
         public IList<PublisherDalModelForSelector> getPublisherForSelectorList =>
             db.Publishers.Select(
                 publisher => new PublisherDalModelForSelector
@@ -26,6 +37,14 @@ namespace LIBRARY_PROJECT_4._0.Dals
                     Name = publisher.Name,
                 }).ToList();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="city"></param>
+        /// <param name="street"></param>
+        /// <param name="num"></param>
+        /// <param name="post"></param>
         internal void Add(string name, string city, string street, string num, string post)
         {
             var newPublisher = new Publisher()
@@ -41,6 +60,15 @@ namespace LIBRARY_PROJECT_4._0.Dals
             db.SaveChanges();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="nameUpdate"></param>
+        /// <param name="city"></param>
+        /// <param name="street"></param>
+        /// <param name="num"></param>
+        /// <param name="post"></param>
         internal void Update(string name, string nameUpdate, string city, string street, string num, string post)
         {
             var publisherToUpdate = db.Publishers
@@ -59,6 +87,10 @@ namespace LIBRARY_PROJECT_4._0.Dals
             db.SaveChanges();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
         internal void Delete(string name)
         {
             var publisherToDelete =

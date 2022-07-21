@@ -2,6 +2,11 @@
 {
     public class PublisherValidation : BasicValidation
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public ValidationResult PostcodeValidation(string text)
         {
             var result = this.ValidateInput(text, "Postcode", 6, 6);
