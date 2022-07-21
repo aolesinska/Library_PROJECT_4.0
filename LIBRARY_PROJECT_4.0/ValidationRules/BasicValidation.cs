@@ -37,7 +37,7 @@ namespace LIBRARY_PROJECT_4._0.ValidationRules
             if (fieldName == "Postcode" && text.Length != 6 && text[2] != '-')
                 return new ValidationResult { IsValidate = false, ErrorMsg = $"Invalid {fieldName}" };
 
-            return new ValidationResult { IsValidate = true, ErrorMsg = null};
+            return new ValidationResult { IsValidate = true, ErrorMsg = ""};
         }
     }
 }
