@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
-        Title="BOOKS" Height="510.9" Width="832.4">
+        Title="BOOKS" Height="510.9" Width="832.4"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <SolidColorBrush Color="#826C33"/>
