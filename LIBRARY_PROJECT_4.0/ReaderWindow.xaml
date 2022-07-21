@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="READERS" Height="471.6" Width="698">
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#826C33"/>
+        </Grid.Background>
+        
         <Label Content="READERS" HorizontalAlignment="Left" Margin="249,10,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontWeight="Bold"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="65,92,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="155,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>

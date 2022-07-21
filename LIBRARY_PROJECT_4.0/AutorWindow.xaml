@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="AUTORS" Height="450" Width="467.6">
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#826C33"/>
+        </Grid.Background>
+        
         <Label Content="AUTHORS" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top" Width="227" Height="71" FontSize="48" FontFamily="Century Gothic" FontWeight="Bold"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="16,132,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="AutorFirstN" HorizontalAlignment="Left" Height="23" Margin="101,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>

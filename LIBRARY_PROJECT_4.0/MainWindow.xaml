@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
         Title="LIBRARY database" Height="450" Width="800">
+    
     <Grid>
-        <Label Content="LIBRARY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="253,10,0,0" FontFamily="Century Gothic" FontSize="72" FontWeight="Bold"/>
-        <Button x:Name="BtnBooks" Content="BOOKS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,127,0,0" Click="BtnBooks_Click" Height="51" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="BtnAuthors" Content="AUTHORS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,191,0,0" Click="BtnAuthors_Click"  Height="50" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="BtnPublishers" Content="PUBLISHERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,254,0,0" Click="BtnPublishers_Click"  Height="52" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="BtnReaders" Content="READERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,319,0,0" Click="BtnReaders_Click"  Height="51" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\git\Library_PROJECT_4.0\icon\books2.jpg"/>
+        </Grid.Background>
+
+        <Label Content="LIBRARY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="253,10,0,0" FontFamily="Century Gothic" FontSize="72" FontWeight="Bold" Foreground="WhiteSmoke"/>
+        <Button x:Name="BtnBooks" Content="BOOKS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,127,0,0" Click="BtnBooks_Click" Height="51" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold" Background="WhiteSmoke"/>
+        <Button x:Name="BtnAuthors" Content="AUTHORS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,191,0,0" Click="BtnAuthors_Click"  Height="50" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold" Background="WhiteSmoke"/>
+        <Button x:Name="BtnPublishers" Content="PUBLISHERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,254,0,0" Click="BtnPublishers_Click"  Height="52" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold" Background="WhiteSmoke"/>
+        <Button x:Name="BtnReaders" Content="READERS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="197,319,0,0" Click="BtnReaders_Click"  Height="51" FontFamily="Century Gothic" FontSize="22" FontWeight="Bold" Background="WhiteSmoke"/>
     </Grid>
 </Window>
