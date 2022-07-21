@@ -76,6 +76,8 @@
     <Compile Include="ReaderWindow.xaml.cs">
       <DependentUpon>ReaderWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ValidationRules\AuthorValidation.cs" />
+    <Compile Include="ValidationRules\BasicValidation.cs" />
     <Page Include="AutorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

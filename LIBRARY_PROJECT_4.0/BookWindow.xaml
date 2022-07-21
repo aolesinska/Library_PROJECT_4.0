@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LIBRARY_PROJECT_4._0"
         mc:Ignorable="d"
-        Title="BOOKS" Height="510.9" Width="832.4">
+        Title="BOOKS" Height="510.9" Width="832.4"
+        WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#826C33"/>
+        </Grid.Background>
+        
         <Label Content="BOOKS" HorizontalAlignment="Center" Margin="191,10,198.8,0" VerticalAlignment="Top" Height="76" Width="191" FontSize="48" FontFamily="Century Gothic" FontWeight="Bold"/>
         <Label Content="Title" HorizontalAlignment="Left" Margin="35,92,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="b_title" HorizontalAlignment="Left" Height="23" Margin="106,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
