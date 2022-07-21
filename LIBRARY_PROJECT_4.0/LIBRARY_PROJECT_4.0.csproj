@@ -78,6 +78,8 @@
     </Compile>
     <Compile Include="ValidationRules\AuthorValidation.cs" />
     <Compile Include="ValidationRules\BasicValidation.cs" />
+    <Compile Include="ValidationRules\PublisherValidation.cs" />
+    <Compile Include="ValidationRules\ReaderValidation.cs" />
     <Page Include="AutorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

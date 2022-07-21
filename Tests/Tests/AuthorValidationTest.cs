@@ -7,9 +7,16 @@ namespace Tests
     public class AuthorValidationTest
     {
         private AuthorValidation validation = new AuthorValidation();
+        [TestInitialize]
+        public void Initialize()
+        {
+            validation = new AuthorValidation();
+        }
+
+
 
         // ---------- FIRST NAME CHECK ---------- //
-
+        
         [TestMethod]
         public void FirstNameCheck_MinLength_ReturnsTrue()
         {
@@ -77,6 +84,7 @@ namespace Tests
         }
 
         // ---------- LAST NAME CHECK ---------- //
+        
 
         [TestMethod]
         public void LastNameCheck_MinLength_ReturnsTrue()
@@ -142,6 +150,6 @@ namespace Tests
             //Assert
             Assert.IsFalse(result.IsValidate);
             Assert.AreEqual("Last Name cannot be empty", result.ErrorMsg);
-        }
+        }                
     }
 }

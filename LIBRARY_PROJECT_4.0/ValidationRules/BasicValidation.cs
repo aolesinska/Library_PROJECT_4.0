@@ -25,16 +25,13 @@ namespace LIBRARY_PROJECT_4._0.ValidationRules
             if (text.Trim().Length < minLenght)
                 return new ValidationResult { IsValidate = false, ErrorMsg = $"{fieldName} cannot be shorter than {minLenght} chars"};
                         
-            if (fieldName == "Email" && !text.Contains("@") && !text.Contains("."))
+            if (fieldName == "Email" && !text.Contains("@") || fieldName == "Email" && !text.Contains("."))
                 return new ValidationResult { IsValidate = false, ErrorMsg = $"{fieldName} has incorrect syntax. Please provide correct email"};
 
-            if (fieldName == "PESEL" && text.Length != 11)
-                return new ValidationResult { IsValidate = false, ErrorMsg = $"{fieldName} must contain exacly 11 numbers" };
-
-            if (fieldName == "PESEL" && !Regex.IsMatch(text, "[a-zA-Z]"))
+            if (fieldName == "PESEL" && Regex.IsMatch(text, "[a-zA-Z]"))
                 return new ValidationResult { IsValidate = false, ErrorMsg = $"{fieldName} can contain only numbers" };
 
-            if (fieldName == "Postcode" && text.Length != 6 && text[2] != '-')
+            if (fieldName == "Postcode" && text[2] != '-')
                 return new ValidationResult { IsValidate = false, ErrorMsg = $"Invalid {fieldName}" };
 
             return new ValidationResult { IsValidate = true, ErrorMsg = ""};
