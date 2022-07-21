@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LIBRARY_PROJECT_4._0.ValidationRules;
+﻿using LIBRARY_PROJECT_4._0.ValidationRules;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Tests
 {

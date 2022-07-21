@@ -1,5 +1,5 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LIBRARY_PROJECT_4._0.ValidationRules;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Tests
 {
@@ -16,7 +16,7 @@ namespace Tests
 
 
         // ---------- FIRST NAME CHECK ---------- //
-        
+
         [TestMethod]
         public void FirstNameCheck_MinLength_ReturnsTrue()
         {
@@ -84,7 +84,7 @@ namespace Tests
         }
 
         // ---------- LAST NAME CHECK ---------- //
-        
+
 
         [TestMethod]
         public void LastNameCheck_MinLength_ReturnsTrue()
@@ -150,6 +150,6 @@ namespace Tests
             //Assert
             Assert.IsFalse(result.IsValidate);
             Assert.AreEqual("Last Name cannot be empty", result.ErrorMsg);
-        }                
+        }
     }
 }

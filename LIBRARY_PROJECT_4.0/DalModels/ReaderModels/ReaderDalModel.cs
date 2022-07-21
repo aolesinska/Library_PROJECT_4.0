@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LIBRARY_PROJECT_4._0.DalModels.ReaderModels
+﻿namespace LIBRARY_PROJECT_4._0.DalModels.ReaderModels
 {
     internal class ReaderDalModel
     {
