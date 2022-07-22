@@ -7,7 +7,7 @@
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        public ValidationResult PostcodeValidation(string text)
+        public ValidationResult Validation(string text)
         {
             var result = this.ValidateInput(text, "Postcode", 6, 6);
             if (!result.IsValidate)

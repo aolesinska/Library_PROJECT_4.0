@@ -5,57 +5,31 @@
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="text"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="email"></param>
+        /// <param name="pesel"></param>
         /// <returns></returns>
-        public ValidationResult FirstNameValidation(string text)
+        public ValidationResult Validation (string firstName, string lastName, string email, string pesel)
         {
-            var result = this.ValidateInput(text, "First Name", 30, 3);
-            if (!result.IsValidate)
-                return result;
+            var firstNresult = this.ValidateInput(firstName, "First Name", 30, 3);
+            if (!firstNresult.IsValidate)
+                return firstNresult;
+
+            var lastNresult = this.ValidateInput(lastName, "Last Name", 30, 3);
+            if (!lastNresult.IsValidate)
+                return lastNresult;
+
+            var emailresult = this.ValidateInput(email, "Email", 50, 15);
+            if (!emailresult.IsValidate)
+                return emailresult;
+
+            var peselresult = this.ValidateInput(pesel, "PESEL", 11, 11);
+            if (!peselresult.IsValidate)
+                return peselresult;
 
             return new ValidationResult { IsValidate = true, ErrorMsg = "" };
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public ValidationResult LastNameValidation(string text)
-        {
-            var result = this.ValidateInput(text, "Last Name", 30, 3);
-            if (!result.IsValidate)
-                return result;
-
-            return new ValidationResult { IsValidate = true, ErrorMsg = "" };
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public ValidationResult EmailValidation(string text)
-        {
-            var result = this.ValidateInput(text, "Email", 50, 15);
-            if (!result.IsValidate)
-                return result;
-
-            return new ValidationResult { IsValidate = true, ErrorMsg = "" };
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public ValidationResult PeselValidation(string text)
-        {
-            var result = this.ValidateInput(text, "PESEL", 11, 11);
-            if (!result.IsValidate)
-                return result;
-
-            return new ValidationResult { IsValidate = true, ErrorMsg = "" };
-        }
+        
     }
 }

@@ -5,30 +5,21 @@
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="text"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         /// <returns></returns>
-        public ValidationResult FNameValidation(string text)
+        public ValidationResult Validation(string firstName, string lastName)
         {
-            var result = this.ValidateInput(text, "First Name", 30, 3);
-            if (!result.IsValidate)
-                return result;
+            var firstNresult = this.ValidateInput(firstName, "First Name", 30, 3);
+            if (!firstNresult.IsValidate)
+                return firstNresult;
+            var lastNresult = this.ValidateInput(lastName, "Last Name", 30, 3);
+            if (!lastNresult.IsValidate)
+                return lastNresult;
 
             return new ValidationResult { IsValidate = true, ErrorMsg = "" };
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public ValidationResult LNameValidation(string text)
-        {
-            var result = this.ValidateInput(text, "Last Name", 30, 3);
-            if (!result.IsValidate)
-                return result;
-
-            return new ValidationResult { IsValidate = true, ErrorMsg = "" };
-        }
+        
     }
 
 }
