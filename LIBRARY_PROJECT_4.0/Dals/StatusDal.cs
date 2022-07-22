@@ -5,9 +5,16 @@ using System.Linq;
 
 namespace LIBRARY_PROJECT_4._0.Dals
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class StatusDal
     {
         private LibraryDB3Entities db = new LibraryDB3Entities();
+
+        /// <summary>
+        /// 
+        /// </summary>
         public IList<StatusDalModelForSelector> getStatusList =>
             db.Status.Select
             (

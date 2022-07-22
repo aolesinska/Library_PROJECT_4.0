@@ -3,11 +3,18 @@ using System.Text.RegularExpressions;
 
 namespace LIBRARY_PROJECT_4._0.ValidationRules
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ValidationResult
     {
         public bool IsValidate { get; set; }
         public string ErrorMsg { get; set; }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class BasicValidation
     {
         protected ValidationResult ValidateInput(string text, string fieldName, int maxLenght, int minLenght)

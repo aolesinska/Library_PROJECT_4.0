@@ -1,5 +1,8 @@
 ﻿namespace LIBRARY_PROJECT_4._0.DalModels.BookModels
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class BookDalModel
     {
         public string Title { get; set; }

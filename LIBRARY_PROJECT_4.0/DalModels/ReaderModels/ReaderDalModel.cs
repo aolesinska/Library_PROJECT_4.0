@@ -1,5 +1,8 @@
 ﻿namespace LIBRARY_PROJECT_4._0.DalModels.ReaderModels
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class ReaderDalModel
     {
         public string FirstName { get; set; }
