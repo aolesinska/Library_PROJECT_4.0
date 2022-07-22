@@ -21,7 +21,7 @@ namespace Tests
         public void FirstNameCheck_MinLength_ReturnsTrue()
         {
             //Act
-            var result = validation.FirstNameValidation("aaa");
+            var result = validation.Validation("aaa","aaaaa","aaaaa@gmail.com","12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -32,7 +32,7 @@ namespace Tests
         public void FirstNameCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.FirstNameValidation("aa");
+            var result = validation.Validation("aa", "aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -43,7 +43,7 @@ namespace Tests
         public void FirstNameCheck_MaxLength_ReturnsTrue()
         {
             //Act
-            var result = validation.FirstNameValidation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa");
+            var result = validation.Validation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa", "aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -54,7 +54,7 @@ namespace Tests
         public void FirstNameCheck_TooLong_ReturnFalse()
         {
             //Act
-            var result = validation.FirstNameValidation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            var result = validation.Validation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -65,7 +65,7 @@ namespace Tests
         public void FirstNameCheck_IsEmpty_ReturnFalse()
         {
             //Act
-            var result = validation.FirstNameValidation("");
+            var result = validation.Validation("", "aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -76,7 +76,7 @@ namespace Tests
         public void FirstNameCheck_IsWhiteSpace_ReturnFalse()
         {
             //Act
-            var result = validation.FirstNameValidation("   ");
+            var result = validation.Validation("   ", "aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -90,7 +90,7 @@ namespace Tests
         public void LastNameCheck_MinLength_ReturnsTrue()
         {
             //Act
-            var result = validation.LastNameValidation("aaa");
+            var result = validation.Validation("aaaaa", "aaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -101,7 +101,7 @@ namespace Tests
         public void LastNameCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.LastNameValidation("aa");
+            var result = validation.Validation("aaaaa", "aa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -112,7 +112,7 @@ namespace Tests
         public void LastNameCheck_MaxLength_ReturnsTrue()
         {
             //Act
-            var result = validation.LastNameValidation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa");
+            var result = validation.Validation("aaaaa", "aaaaaaaaaabbbbbbbbbbaaaaaaaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -123,7 +123,7 @@ namespace Tests
         public void LastNameCheck_TooLong_ReturnFalse()
         {
             //Act
-            var result = validation.LastNameValidation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            var result = validation.Validation("aaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -134,7 +134,7 @@ namespace Tests
         public void LastNameCheck_IsEmpty_ReturnFalse()
         {
             //Act
-            var result = validation.LastNameValidation("");
+            var result = validation.Validation("aaaaa", "", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -145,7 +145,7 @@ namespace Tests
         public void LastNameCheck_IsWhiteSpace_ReturnFalse()
         {
             //Act
-            var result = validation.LastNameValidation("   ");
+            var result = validation.Validation("aaaaa", "   ", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -158,7 +158,7 @@ namespace Tests
         public void EmailCheck_MinLength_ReturnsTrue()
         {
             //Act
-            var result = validation.EmailValidation("aaaaa@gmail.com");
+            var result = validation.Validation("aaaaa","aaaaa", "aaaaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -169,7 +169,7 @@ namespace Tests
         public void EmailCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.EmailValidation("aaa@gmail.com");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaa@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -180,7 +180,7 @@ namespace Tests
         public void EmailCheck_MaxLength_ReturnsTrue()
         {
             //Act
-            var result = validation.EmailValidation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaabbbbbbbbbb@gmail.com");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaaaaaabbbbbbbbbbaaaaaaaaaabbbbbbbbbb@gmail.com", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -191,7 +191,7 @@ namespace Tests
         public void EmailCheck_TooLong_ReturnFalse()
         {
             //Act
-            var result = validation.EmailValidation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbba@gmail.com");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbba@gmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -202,7 +202,7 @@ namespace Tests
         public void EmailCheck_SignLack_ReturnFalse()
         {
             //Act
-            var result = validation.EmailValidation("aaaaaagmail.com");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaagmail.com", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -213,7 +213,7 @@ namespace Tests
         public void EmailCheck_SignLack2_ReturnFalse()
         {
             //Act
-            var result = validation.EmailValidation("aaaaaa@gmailcom");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaa@gmailcom", "12345678912");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -227,7 +227,7 @@ namespace Tests
         public void PeselCheck_Ideal_ReturnsTrue()
         {
             //Act
-            var result = validation.PeselValidation("12345678912");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaa@.gmailcom", "12345678912");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -238,7 +238,7 @@ namespace Tests
         public void PeselCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.PeselValidation("1111111111");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaa@.gmailcom", "1111111111");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -249,7 +249,7 @@ namespace Tests
         public void PeselCheck_TooLong_ReturnsFalse()
         {
             //Act
-            var result = validation.PeselValidation("111111111111");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaa@.gmailcom", "111111111111");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -260,7 +260,7 @@ namespace Tests
         public void PeselCheck_WrongSyntax_ReturnsFalse()
         {
             //Act
-            var result = validation.PeselValidation("11ab4761111");
+            var result = validation.Validation("aaaaa", "aaaaa", "aaaaaa@.gmailcom", "11ab4761111");
 
             //Assert
             Assert.IsFalse(result.IsValidate);

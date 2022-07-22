@@ -19,7 +19,7 @@ namespace Tests
         public void PostcodeCheck_Ideal_ReturnsTrue()
         {
             //Act
-            var result = validation.PostcodeValidation("11-111");
+            var result = validation.Validation("11-111");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -30,7 +30,7 @@ namespace Tests
         public void PostcodeCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.PostcodeValidation("11-11");
+            var result = validation.Validation("11-11");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -41,7 +41,7 @@ namespace Tests
         public void PostcodeCheck_TooLong_ReturnsFalse()
         {
             //Act
-            var result = validation.PostcodeValidation("11-1111");
+            var result = validation.Validation("11-1111");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -52,7 +52,7 @@ namespace Tests
         public void PostcodeCheck_WrongSyntax_ReturnsFalse()
         {
             //Act
-            var result = validation.PostcodeValidation("111111");
+            var result = validation.Validation("111111");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
