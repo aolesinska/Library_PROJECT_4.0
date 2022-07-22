@@ -21,7 +21,7 @@ namespace Tests
         public void FirstNameCheck_MinLength_ReturnsTrue()
         {
             //Act
-            var result = validation.FNameValidation("aaa");
+            var result = validation.Validation("aaa","aaaaa");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -32,7 +32,7 @@ namespace Tests
         public void FirstNameCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.FNameValidation("aa");
+            var result = validation.Validation("aa", "aaaaa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -43,7 +43,7 @@ namespace Tests
         public void FirstNameCheck_MaxLength_ReturnsTrue()
         {
             //Act
-            var result = validation.FNameValidation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa");
+            var result = validation.Validation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa", "aaaaa");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -54,7 +54,7 @@ namespace Tests
         public void FirstNameCheck_TooLong_ReturnFalse()
         {
             //Act
-            var result = validation.FNameValidation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            var result = validation.Validation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -65,7 +65,7 @@ namespace Tests
         public void FirstNameCheck_IsEmpty_ReturnFalse()
         {
             //Act
-            var result = validation.FNameValidation("");
+            var result = validation.Validation("", "aaaaa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -76,7 +76,7 @@ namespace Tests
         public void FirstNameCheck_IsWhiteSpace_ReturnFalse()
         {
             //Act
-            var result = validation.FNameValidation("   ");
+            var result = validation.Validation("   ", "aaaaa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -90,7 +90,7 @@ namespace Tests
         public void LastNameCheck_MinLength_ReturnsTrue()
         {
             //Act
-            var result = validation.LNameValidation("aaa");
+            var result = validation.Validation("aaaaa", "aaa");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -101,7 +101,7 @@ namespace Tests
         public void LastNameCheck_TooShort_ReturnsFalse()
         {
             //Act
-            var result = validation.LNameValidation("aa");
+            var result = validation.Validation("aaaaa", "aa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -112,7 +112,7 @@ namespace Tests
         public void LastNameCheck_MaxLength_ReturnsTrue()
         {
             //Act
-            var result = validation.LNameValidation("aaaaaaaaaabbbbbbbbbbaaaaaaaaaa");
+            var result = validation.Validation("aaaaa", "aaaaaaaaaabbbbbbbbbbaaaaaaaaaa");
 
             //Assert
             Assert.IsTrue(result.IsValidate);
@@ -123,7 +123,7 @@ namespace Tests
         public void LastNameCheck_TooLong_ReturnFalse()
         {
             //Act
-            var result = validation.LNameValidation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            var result = validation.Validation("aaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -134,7 +134,7 @@ namespace Tests
         public void LastNameCheck_IsEmpty_ReturnFalse()
         {
             //Act
-            var result = validation.LNameValidation("");
+            var result = validation.Validation("aaaaa", "");
 
             //Assert
             Assert.IsFalse(result.IsValidate);
@@ -145,7 +145,7 @@ namespace Tests
         public void LastNameCheck_IsWhiteSpace_ReturnFalse()
         {
             //Act
-            var result = validation.LNameValidation("   ");
+            var result = validation.Validation("aaaaa", "   ");
 
             //Assert
             Assert.IsFalse(result.IsValidate);

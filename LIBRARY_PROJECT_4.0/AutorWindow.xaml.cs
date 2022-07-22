@@ -1,5 +1,6 @@
 ﻿using LIBRARY_PROJECT_4._0.DalModels.AutorModels;
 using LIBRARY_PROJECT_4._0.Dals;
+using LIBRARY_PROJECT_4._0.ValidationRules;
 using System;
 using System.Windows;
 
@@ -11,6 +12,7 @@ namespace LIBRARY_PROJECT_4._0
     public partial class AutorWindow : Window
     {
         AutorDal autorDal = new AutorDal();
+        AuthorValidation authorValidation = new AuthorValidation();
 
         public AutorWindow()
         {
@@ -31,6 +33,13 @@ namespace LIBRARY_PROJECT_4._0
 
         private void BtnAddAutor_Click(object sender, RoutedEventArgs e)
         {
+            var result = authorValidation.Validation(AutorFirstN.Text, AutorLastN.Text);
+            if (!result.IsValidate)
+            {
+                MessageBox.Show(result.ErrorMsg);
+                return;
+            }
+
             try
             {
                 if (AutorFirstN.Text.Length == 0 || AutorLastN.Text.Length == 0)
@@ -80,6 +89,13 @@ namespace LIBRARY_PROJECT_4._0
         }
         private void BtnUpdateAutor_Click(object sender, RoutedEventArgs e)
         {
+            var result = authorValidation.Validation(AutorFirstN.Text, AutorLastN.Text);
+            if (!result.IsValidate)
+            {
+                MessageBox.Show(result.ErrorMsg);
+                return;
+            }
+
             try
             {
                 if (AutorFirstN_Update.Text.Length == 0 || AutorLastN_Update.Text.Length == 0)

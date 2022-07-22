@@ -1,7 +1,19 @@
 ﻿using LIBRARY_PROJECT_4._0.DalModels.PublisherModels;
 using LIBRARY_PROJECT_4._0.Dals;
+using LIBRARY_PROJECT_4._0.ValidationRules;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace LIBRARY_PROJECT_4._0
 {
@@ -11,6 +23,8 @@ namespace LIBRARY_PROJECT_4._0
     public partial class PublisherWindow : Window
     {
         PublisherDal publisherDal = new PublisherDal();
+        PublisherValidation publisherValidation = new PublisherValidation();
+
         public PublisherWindow()
         {
             InitializeComponent();
@@ -30,6 +44,13 @@ namespace LIBRARY_PROJECT_4._0
         }
         private void BtnAddPublisher_Click(object sender, RoutedEventArgs e)
         {
+            var result = publisherValidation.Validation(pub_post.Text);
+            if (!result.IsValidate)
+            {
+                MessageBox.Show(result.ErrorMsg);
+                return;
+            }
+
             try
             {
                 if (pub_name.Text.Length == 0)
@@ -76,6 +97,13 @@ namespace LIBRARY_PROJECT_4._0
         }
         private void BtnUpdatePublisher_Click(object sender, RoutedEventArgs e)
         {
+            var result = publisherValidation.Validation(pub_post.Text);
+            if (!result.IsValidate)
+            {
+                MessageBox.Show(result.ErrorMsg);
+                return;
+            }
+
             try
             {
                 if (pub_name.Text.Length == 0)
