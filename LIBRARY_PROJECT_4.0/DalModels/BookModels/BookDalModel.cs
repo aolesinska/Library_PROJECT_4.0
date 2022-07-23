@@ -1,7 +1,7 @@
 ﻿namespace LIBRARY_PROJECT_4._0.DalModels.BookModels
 {
     /// <summary>
-    /// 
+    /// Model created to display book in the table without ID property
     /// </summary>
     internal class BookDalModel
     {

@@ -1,7 +1,7 @@
 ﻿namespace LIBRARY_PROJECT_4._0.DalModels.PublisherModels
 {
     /// <summary>
-    /// 
+    /// Model created to display publisher in the table without ID property
     /// </summary>
     internal class PublisherDalModel
     {
