@@ -40,3 +40,12 @@ A reader window allows us to add a new reader to the database and update or dele
 
 ![image](https://user-images.githubusercontent.com/91792874/180603662-7e927cf8-49dd-404e-bb98-96c55b7e4bf8.png)
 
+### Queries for the database to create tables:
+
+[library.txt](https://github.com/aolesinska/-PO_WSEI_2022_Projekt_zaliczeniowy/files/9174055/library.txt)
+
+
+### Queries to fill the database:
+
+[library_data.txt](https://github.com/aolesinska/-PO_WSEI_2022_Projekt_zaliczeniowy/files/9174056/library_data.txt)
+
