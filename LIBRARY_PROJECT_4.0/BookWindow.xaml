@@ -14,20 +14,21 @@
         
         <Label Content="BOOKS" HorizontalAlignment="Center" Margin="191,10,198.8,0" VerticalAlignment="Top" Height="76" Width="191" FontSize="48" FontFamily="Century Gothic" FontWeight="Bold"/>
         <Label Content="Title" HorizontalAlignment="Left" Margin="35,92,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="b_title" HorizontalAlignment="Left" Height="23" Margin="106,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="b_title" HorizontalAlignment="Left" Height="23" Margin="106,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Label Content="ISBN" HorizontalAlignment="Left" Margin="35,120,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="b_isbn" HorizontalAlignment="Left" Height="23" Margin="106,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="b_isbn" HorizontalAlignment="Left" Height="23" Margin="106,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Label Content="Category" HorizontalAlignment="Left" Margin="35,148,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Label Content="Author" HorizontalAlignment="Left" Margin="35,179,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Label Content="Publisher" HorizontalAlignment="Left" Margin="35,210,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Label Content="Status" HorizontalAlignment="Left" Margin="590,87,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
-        <ComboBox x:Name="combo_category" HorizontalAlignment="Left" Margin="106,151,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
-        <ComboBox x:Name="combo_autor" HorizontalAlignment="Left" Margin="106,182,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
-        <ComboBox x:Name="combo_publisher" HorizontalAlignment="Left" Margin="106,213,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="combo_category" HorizontalAlignment="Left" Margin="106,151,0,0" VerticalAlignment="Top" Width="334" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="combo_autor" HorizontalAlignment="Left" Margin="106,182,0,0" VerticalAlignment="Top" Width="334" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="combo_publisher" HorizontalAlignment="Left" Margin="106,213,0,0" VerticalAlignment="Top" Width="334" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <ComboBox x:Name="combo_status" HorizontalAlignment="Left" Margin="661,91,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Name" SelectedValuePath="ID" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="19,258,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Button x:Name="BtnAddBook"  Content="Add" HorizontalAlignment="Left" Margin="706,185,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddBook_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Button x:Name="BtnDeleteBook" Content="Delete" HorizontalAlignment="Left" Margin="706,217,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeleteBook_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <DataGrid x:Name="gridBooks" ColumnWidth="*" HorizontalAlignment="Left" Height="176" Margin="10,295,0,0" VerticalAlignment="Top" Width="806" SelectionChanged="gridBooks_SelectionChanged" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="BtnClearInput" Content="Clear" HorizontalAlignment="Left" Margin="706,258,0,0" VerticalAlignment="Top" Width="75" Click="BtnClearInput_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Window>

@@ -1,12 +1,23 @@
 ﻿using LIBRARY_PROJECT_4._0.DalModels.BookModels;
 using LIBRARY_PROJECT_4._0.Dals;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace LIBRARY_PROJECT_4._0
 {
     /// <summary>
-    /// Interaction logic for BookWindow.xaml
+    /// This class includes all functionality to manipulate book data
     /// </summary>
     public partial class BookWindow : Window
     {
@@ -33,7 +44,7 @@ namespace LIBRARY_PROJECT_4._0
         private void LoadBooksData() => this.gridBooks.ItemsSource = bookDal.getBooksList;
 
         private void BtnBackToNav_Click(object sender, RoutedEventArgs e) => this.Close();
-        private void clearInput() => this.b_title.Text = "";
+        private void ClearInput() => this.b_title.Text = "";
 
         private void BtnAddBook_Click(object sender, RoutedEventArgs e)
         {
@@ -54,7 +65,7 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadBooksData();
-            clearInput();
+            ClearInput();
 
         }
         protected string bookTitle;
@@ -84,6 +95,11 @@ namespace LIBRARY_PROJECT_4._0
         {
             bookDal.Delete(bookTitle);
             LoadBooksData();
+        }
+
+        private void BtnClearInput_Click(object sender, RoutedEventArgs e)
+        {
+            ClearInput();
         }
     }
 }

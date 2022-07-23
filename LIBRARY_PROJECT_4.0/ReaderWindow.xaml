@@ -14,19 +14,20 @@
         
         <Label Content="READERS" HorizontalAlignment="Left" Margin="249,10,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="48" FontWeight="Bold"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="65,92,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="155,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_fname" HorizontalAlignment="Left" Height="23" Margin="155,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="r_lname" HorizontalAlignment="Left" Height="23" Margin="155,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_lname" HorizontalAlignment="Left" Height="23" Margin="155,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Label Content="PESEL" HorizontalAlignment="Left" Margin="65,148,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="r_pesel" HorizontalAlignment="Left" Height="23" Margin="155,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_pesel" HorizontalAlignment="Left" Height="23" Margin="155,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Label Content="E-mail" HorizontalAlignment="Left" Margin="65,176,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="r_email" HorizontalAlignment="Left" Height="23" Margin="155,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_email" HorizontalAlignment="Left" Height="23" Margin="155,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Label Content="Phone" HorizontalAlignment="Left" Margin="65,204,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="r_phone" HorizontalAlignment="Left" Height="23" Margin="155,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="r_phone" HorizontalAlignment="Left" Height="23" Margin="155,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Button x:Name="BtnBackToNav" Content="Back" HorizontalAlignment="Left" Margin="56,250,0,0" VerticalAlignment="Top" Width="75" Click="BtnBackToNav_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Button x:Name="BtnAddReader" Content="Add" HorizontalAlignment="Left" Margin="537,92,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Button x:Name="BtnUpdateReader" Content="Update" HorizontalAlignment="Left" Margin="537,120,0,0" VerticalAlignment="Top" Width="75" Click="BtnUpdateReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <Button x:Name="BtnDeleteReader" Content="Delete" HorizontalAlignment="Left" Margin="537,148,0,0" VerticalAlignment="Top" Width="75" Click="BtnDeleteReader_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
         <DataGrid x:Name="gridReaders" ColumnWidth="*" HorizontalAlignment="Left" Height="150" Margin="10,282,0,0" VerticalAlignment="Top" Width="671" SelectionChanged="gridReaders_SelectionChanged" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnClearInput" Content="Clear" HorizontalAlignment="Left" Margin="537,176,0,0" VerticalAlignment="Top" Width="75" Click="BtnClearInput_Click" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
     </Grid>
 </Window>

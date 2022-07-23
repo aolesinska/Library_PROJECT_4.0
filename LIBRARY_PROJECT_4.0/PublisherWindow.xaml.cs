@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace LIBRARY_PROJECT_4._0
 {
     /// <summary>
-    /// Interaction logic for PublisherWindow.xaml
+    /// This class includes all functionality to manipulate publisher data
     /// </summary>
     public partial class PublisherWindow : Window
     {
@@ -34,7 +34,7 @@ namespace LIBRARY_PROJECT_4._0
         private void LoadPublisherData() => this.gridPublishers.ItemsSource = publisherDal.getPublisherList;
 
         private void BtnBackToNav_Click(object sender, RoutedEventArgs e) => this.Close();
-        private void clearInput()
+        private void ClearInput()
         {
             this.pub_name.Text = "";
             this.pub_city.Text = "";
@@ -70,7 +70,7 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadPublisherData();
-            clearInput();
+            ClearInput();
         }
         protected string publisherName;
         private void gridPublishers_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -123,7 +123,7 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadPublisherData();
-            clearInput();
+            ClearInput();
         }
 
         private void BtnDeletePublisher_Click(object sender, RoutedEventArgs e)
@@ -134,7 +134,7 @@ namespace LIBRARY_PROJECT_4._0
 
         private void BtnClearInput_Click(object sender, RoutedEventArgs e)
         {
-            clearInput();
+            ClearInput();
         }
     }
 }

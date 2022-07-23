@@ -3,10 +3,10 @@
     public class PublisherValidation : BasicValidation
     {
         /// <summary>
-        /// 
+        /// Function to validate input during adding a new publisher
         /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
+        /// <param name="text">Publisher's postcode</param>
+        /// <returns>Validation message and boolean value</returns>
         public ValidationResult Validation(string text)
         {
             var result = this.ValidateInput(text, "Postcode", 6, 6);

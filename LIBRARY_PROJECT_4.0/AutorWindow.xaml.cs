@@ -7,7 +7,7 @@ using System.Windows;
 namespace LIBRARY_PROJECT_4._0
 {
     /// <summary>
-    /// Interaction logic for AutorWindow.xaml
+    /// This class includes all functionality to manipulate author data
     /// </summary>
     public partial class AutorWindow : Window
     {
@@ -23,7 +23,7 @@ namespace LIBRARY_PROJECT_4._0
         private void LoadAutorData() => this.gridAutors.ItemsSource = autorDal.getAuthorNameList;
 
         private void BtnBackToNav_Click(object sender, RoutedEventArgs e) => this.Close();
-        private void clearInput()
+        private void ClearInput()
         {
             this.AutorFirstN.Text = "";
             this.AutorLastN.Text = "";
@@ -56,13 +56,13 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadAutorData();
-            clearInput();
+            ClearInput();
         }
 
         private void BtnDeleteAutor_Click(object sender, RoutedEventArgs e)
         {
             autorDal.Delete(AutorLastN_Update.Text);
-            clearInput();
+            ClearInput();
             LoadAutorData();
 
         }
@@ -113,7 +113,12 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadAutorData();
-            clearInput();
+            ClearInput();
+        }
+
+        private void BtnClearInput_Click(object sender, RoutedEventArgs e)
+        {
+            ClearInput();
         }
     }
 }

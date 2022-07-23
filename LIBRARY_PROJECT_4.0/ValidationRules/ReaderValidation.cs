@@ -3,13 +3,13 @@
     public class ReaderValidation : BasicValidation
     {
         /// <summary>
-        /// 
+        /// Function to validate input during  updating or adding a new reader
         /// </summary>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
-        /// <param name="email"></param>
-        /// <param name="pesel"></param>
-        /// <returns></returns>
+        /// <param name="firstName">Reader's first name</param>
+        /// <param name="lastName">Reader's last name</param>
+        /// <param name="email">Reader's email</param>
+        /// <param name="pesel">Reader's pesel</param>
+        /// <returns>Validation message and boolean value</returns>
         public ValidationResult Validation (string firstName, string lastName, string email, string pesel)
         {
             var firstNresult = this.ValidateInput(firstName, "First Name", 30, 3);

@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace LIBRARY_PROJECT_4._0
 {
     /// <summary>
-    /// Interaction logic for ReaderWindow.xaml
+    /// This class includes all functionality to manipulate reader data
     /// </summary>
     public partial class ReaderWindow : Window
     {
@@ -31,7 +31,7 @@ namespace LIBRARY_PROJECT_4._0
             LoadReaderData();
         }
         private void LoadReaderData() => this.gridReaders.ItemsSource = readerDal.getReaderList;
-        private void clearInput()
+        private void ClearInput()
         {
             this.r_fname.Text = "";
             this.r_lname.Text = "";
@@ -93,7 +93,7 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadReaderData();
-            clearInput();
+            ClearInput();
         }
 
         private void BtnUpdateReader_Click(object sender, RoutedEventArgs e)
@@ -124,13 +124,18 @@ namespace LIBRARY_PROJECT_4._0
             }
 
             LoadReaderData();
-            clearInput();
+            ClearInput();
         }
 
         private void BtnDeleteReader_Click(object sender, RoutedEventArgs e)
         {
             readerDal.Delete(readerEmail);
             LoadReaderData();
+        }
+
+        private void BtnClearInput_Click(object sender, RoutedEventArgs e)
+        {
+            ClearInput();
         }
     }
 }

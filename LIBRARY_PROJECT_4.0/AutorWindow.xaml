@@ -26,5 +26,6 @@
         <Button  x:Name="BtnUpdateAutor" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="274,202,0,0" Click="BtnUpdateAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Button x:Name="BtnAddAutor" Content="Add" HorizontalAlignment="Left" Margin="133,202,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
         <Button x:Name="BtnDeleteAutor" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="357,202,0,0" Click="BtnDeleteAutor_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="BtnClearInput" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="357,227,0,0" Click="BtnClearInput_Click" FontFamily="Century Gothic" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Window>

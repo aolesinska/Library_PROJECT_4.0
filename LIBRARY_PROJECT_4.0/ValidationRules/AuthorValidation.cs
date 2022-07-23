@@ -3,11 +3,11 @@
     public class AuthorValidation : BasicValidation
     {
         /// <summary>
-        /// 
+        /// Function to validate input during adding a new autor
         /// </summary>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
-        /// <returns></returns>
+        /// <param name="firstName">Autor's first name</param>
+        /// <param name="lastName">Autor's last name</param>
+        /// <returns>Validation message and bool value</returns>
         public ValidationResult Validation(string firstName, string lastName)
         {
             var firstNresult = this.ValidateInput(firstName, "First Name", 30, 3);

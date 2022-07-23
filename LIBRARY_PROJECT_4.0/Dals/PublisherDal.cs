@@ -6,14 +6,14 @@ using System.Linq;
 namespace LIBRARY_PROJECT_4._0.Dals
 {
     /// <summary>
-    /// 
+    /// Publishers' data source connection
     /// </summary>
     internal class PublisherDal
     {
         private LibraryDB3Entities db = new LibraryDB3Entities();
 
         /// <summary>
-        /// 
+        /// Returns publishers' information used for filling the table
         /// </summary>
         public IList<PublisherDalModel> getPublisherList =>
             db.Publishers.Select(
@@ -27,7 +27,7 @@ namespace LIBRARY_PROJECT_4._0.Dals
                 }).ToList();
 
         /// <summary>
-        /// 
+        /// Returns publishers' information needed for the combobox
         /// </summary>
         public IList<PublisherDalModelForSelector> getPublisherForSelectorList =>
             db.Publishers.Select(
@@ -38,13 +38,13 @@ namespace LIBRARY_PROJECT_4._0.Dals
                 }).ToList();
 
         /// <summary>
-        /// 
+        /// Function which adds new publisher to the Database
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="city"></param>
-        /// <param name="street"></param>
-        /// <param name="num"></param>
-        /// <param name="post"></param>
+        /// <param name="name">Publisher's name</param>
+        /// <param name="city">Publisher's city</param>
+        /// <param name="street">Publisher's street</param>
+        /// <param name="num">Publisher's building number</param>
+        /// <param name="post">Publisher's postcode</param>
         internal void Add(string name, string city, string street, string num, string post)
         {
             var newPublisher = new Publisher()
@@ -61,14 +61,14 @@ namespace LIBRARY_PROJECT_4._0.Dals
         }
 
         /// <summary>
-        /// 
+        /// Function which updates publisher's information in the Database
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="nameUpdate"></param>
-        /// <param name="city"></param>
-        /// <param name="street"></param>
-        /// <param name="num"></param>
-        /// <param name="post"></param>
+        /// <param name="name">Publisher's old name</param>
+        /// <param name="nameUpdate">Publisher's new name</param>
+        /// <param name="city">Publisher's city</param>
+        /// <param name="street">Publisher's street</param>
+        /// <param name="num">Publisher's building number</param>
+        /// <param name="post">Publisher's postcode</param>
         internal void Update(string name, string nameUpdate, string city, string street, string num, string post)
         {
             var publisherToUpdate = db.Publishers
@@ -88,9 +88,9 @@ namespace LIBRARY_PROJECT_4._0.Dals
         }
 
         /// <summary>
-        /// 
+        /// Function which deletes publisher from the Database
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">Publisher's name</param>
         internal void Delete(string name)
         {
             var publisherToDelete =
